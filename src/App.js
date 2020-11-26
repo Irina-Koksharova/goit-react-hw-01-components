@@ -4,10 +4,10 @@ import user from './components/Profile/user.json';
 function App() {
     return <div>
         <Profile
-            avatar={user.avatar}
             name={user.name}
             tag={user.tag}
             location={user.location}
+            avatar={user.avatar}
             stats = {user.stats} 
         />
     </div>;

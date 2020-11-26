@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Profile({ avatar, name, tag, location, stats }) {
+function Profile({ name, tag, location, avatar, stats }) {
   return <div className="profile">
   <div className="description">
     <img
@@ -31,11 +31,15 @@ function Profile({ avatar, name, tag, location, stats }) {
 }
 
 Profile.propTypes = {
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    stats: PropTypes.object,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes:PropTypes.number
+  }).isRequired,
 
 };
 

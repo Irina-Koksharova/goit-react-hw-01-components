@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Stats from './../Stats/Stats';
+import Stats from './Stats/Stats';
 
 function Statistics({ title, stats }) { 
     return <section className="statistics">

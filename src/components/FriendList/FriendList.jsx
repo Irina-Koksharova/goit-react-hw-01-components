@@ -4,7 +4,7 @@ import FriendListItem from './FriendListItem/FriendListItem';
 function FriendList({friends}) {
     return <ul className="friend-list">
         {friends.map(friend => (
-            <li key={friend.id} className="item" >
+            <li className="item" key={friend.id}>
                 <FriendListItem
                     avatar={friend.avatar}
                     name={friend.name}

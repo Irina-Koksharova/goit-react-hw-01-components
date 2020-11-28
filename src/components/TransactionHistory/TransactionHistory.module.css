@@ -1,0 +1,23 @@
+.table {
+  width: calc((100% - 100px) / 2);
+  height: 500px;
+  margin: 30px 0 0;
+  padding: 30px;
+  text-align: center;
+  border-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.head {
+  background-color: rgb(194, 167, 167);
+}
+
+.string:nth-child(even) {
+  background-color: rgb(236, 229, 229);
+}
+
+.string:nth-child(odd) {
+  background-color: white;
+}

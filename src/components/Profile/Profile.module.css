@@ -16,6 +16,7 @@
   display: block;
   width: 100%;
   height: 55%;
+  object-fit: contain;
 }
 
 .name {
@@ -35,7 +36,7 @@
   font-size: 20px;
 }
 
-.stats {
+.statsList {
   display: flex;
   height: 20%;
   margin: 0;
@@ -43,11 +44,11 @@
   list-style-type: none;
 }
 
-.stat {
+.statsItem {
   width: calc((100% - 20px) / 3);
 }
 
-.stat:not(:last-child) {
+.statsItem:not(:last-child) {
   margin-right: 10px;
 }
 

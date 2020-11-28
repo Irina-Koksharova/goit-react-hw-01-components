@@ -1,0 +1,16 @@
+.label,
+.percentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.percentage {
+  font-size: 22px;
+}

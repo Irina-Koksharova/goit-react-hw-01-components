@@ -1,3 +1,4 @@
+import Container from './components/Container/Container';
 import Profile from './components/Profile/Profile';
 import user from './components/Profile/user.json';
 import Statistics from './components/Statistics/Statistics';
@@ -6,7 +7,6 @@ import FriendList from './components/FriendList/FriendList';
 import friends from './components/FriendList/friends.json';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import transactions from './components/TransactionHistory/transactions.json';
-import Container from './components/Container/Container';
 
 function App() {
   return (

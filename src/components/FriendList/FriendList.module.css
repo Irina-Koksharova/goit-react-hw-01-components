@@ -1,0 +1,26 @@
+.list {
+  width: calc((100% - 100px) / 2);
+  height: 500px;
+  margin: 30px 100px 0 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: calc((100% - 40px) / 5);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 30px;
+  list-style-type: none;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}

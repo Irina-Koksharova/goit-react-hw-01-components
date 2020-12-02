@@ -1,11 +1,10 @@
-import { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import s from './Stats.module.css';
 import { makeRandomNumber } from './randomBGColor';
 
 function Stats({ label, percentage }) {
   return (
-    <Fragment>
+    <li className={s.item}>
       <span className={s.label}>{label}</span>
       <span
         className={s.percentage}
@@ -16,7 +15,7 @@ function Stats({ label, percentage }) {
       >
         {percentage}%
       </span>
-    </Fragment>
+    </li>
   );
 }
 

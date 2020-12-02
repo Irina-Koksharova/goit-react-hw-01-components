@@ -9,9 +9,11 @@ function Statistics({ title, stats }) {
 
       <ul className={s.list}>
         {stats.map(stat => (
-          <li className={s.item} key={stat.id}>
-            <Stats label={stat.label} percentage={stat.percentage} />
-          </li>
+          <Stats
+            key={stat.id}
+            label={stat.label}
+            percentage={stat.percentage}
+          />
         ))}
       </ul>
     </section>
@@ -23,6 +25,8 @@ Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     }),
   ),
 };

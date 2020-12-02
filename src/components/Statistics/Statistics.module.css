@@ -32,7 +32,3 @@
   border-radius: 3px;
   overflow: hidden;
 }
-
-.item {
-  width: calc(100% / 5);
-}

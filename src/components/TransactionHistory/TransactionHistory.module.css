@@ -13,11 +13,3 @@
 .head {
   background-color: rgb(194, 167, 167);
 }
-
-.string:nth-child(even) {
-  background-color: rgb(236, 229, 229);
-}
-
-.string:nth-child(odd) {
-  background-color: white;
-}
